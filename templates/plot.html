@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="plot-container">
+        <h1>Historical Data Plot</h1>
+        <img class="plot-chart-image" src="data:image/png;base64,{{ plot_data }}" alt="Plot">
+        <br><br>
+        <a class="go-back-btn" href="/">Go Back</a>
+    </div>
+</body>
+</html>
