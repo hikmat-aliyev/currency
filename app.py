@@ -52,6 +52,3 @@ def plot():
     plot_data = base64.b64encode(buffer.getvalue()).decode('utf-8')
 
     return render_template('plot.html', plot_data=plot_data)
-
-if __name__ == '__main__':
-    app.run(debug=True)
