@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-from flask_debugtoolbar import DebugToolbarExtension
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -8,7 +7,6 @@ from io import BytesIO
 import base64
 
 app = Flask(__name__)
-toolbar = DebugToolbarExtension(app)
 
 # List of currencies
 currencies = ['USD', 'EUR', 'JPY', 'GBP', 'CNY', 'AUD', 'CAD', 'CHF', 'HKD', 'SGD', 'SEK', 'KRW', 'NOK', 'NZD',
